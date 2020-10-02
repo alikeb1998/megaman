@@ -6,3 +6,4 @@ class Fish(models.Model):
     name = models.CharField(max_length=255)
     created = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField()
+    last = models.CharField(max_length=255,null=True)
